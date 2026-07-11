@@ -1,4 +1,4 @@
-# Lumora Dental — project notes
+# Dr. Naina Sachdeva's Dental Hub — project notes
 
 A premium dental clinic website. **Origin:** a de-branded, rebuilt version of a Webflow HTML
 template (originally "Smilifye" by author "Flowfye"). Every Webflow/template trace has been
@@ -31,8 +31,8 @@ deletes images during a re-skin, nothing ever shows a broken/gray/red box — it
 - `.bak/` — original Webflow exports, kept for reference.
 
 ## Brand
-- Name: **Lumora Dental**. Accent teal `#24a3b1`; deep teal `#011f23` / `#022f34`. Font: Sora.
-- Email: `hello@lumoradental.com` (placeholder). Phone in footer is template placeholder.
+- Name: **Dr. Naina Sachdeva's Dental Hub**. Accent teal `#24a3b1`; deep teal `#011f23` / `#022f34`. Font: Sora.
+- Email: `nainasachdeva226@gmail.com` (placeholder). Phone in footer is template placeholder.
 
 ## Wiring
 - Nav/footer links are local `.html` files. All "Book/Get Appointment" CTAs (×6) →
@@ -44,7 +44,7 @@ deletes images during a re-skin, nothing ever shows a broken/gray/red box — it
 - **IMPORTANT — IX2 reveals don't fire on the export.** Webflow baked every reveal element's hidden
   state into inline styles (`opacity:0` + `transform:translateY` + `filter:blur`), to be animated by
   IX2 — but the exported IX2 data never applies them, so without a fix all that text/imagery stays
-  invisible/blurred. Fix = the **"Lumora reveal engine v2"** `<script>` before `</body>` on every page:
+  invisible/blurred. Fix = the **"Dr. Naina Sachdeva reveal engine v2"** `<script>` before `</body>` on every page:
   it finds `[data-w-id][style*="opacity:0"]` (outside the nav) and fades+slides them in via GSAP
   ScrollTrigger, with a 2.6s safety net that force-shows anything still hidden. **No blur** is used.
 - All inline `filter:blur(...)` has been stripped from the HTML (it was leaving images permanently
@@ -85,7 +85,7 @@ is a CSS variant and is fine to keep.)
 - `variant-blue/` = full copy recolored teal->bright blue (`--primary-*` overrides + hex sweep),
   4-point sparkle eyebrow icon. Same layout/animations.
 - Legal pages: `privacy/terms/cookies/licenses/404.html` (hand-built, on-brand, all footer-linked).
-- Footer credit: "Crafted by RapidXAI" + "© 2026 Lumora Dental".
+- Footer credit: "Crafted by RapidXAI" + "© 2026 Dr. Naina Sachdeva's Dental Hub".
 - GitHub: private repo `toprmrproducer/lumora-dental`.
 - Netlify: site `lumora-dental-blue.netlify.app` created but deploy BLOCKED (account credits exhausted).
 - `ONESHOT_PROMPT.md` = comprehensive prompt to regenerate this site from scratch with [PLACEHOLDERS].
